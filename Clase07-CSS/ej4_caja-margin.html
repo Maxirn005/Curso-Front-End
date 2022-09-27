@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de caja</title>
+    <style>
+        body {
+            font-family: Arial;
+            font-size: 20px;
+           /* margin: 25px;*/
+        }
+
+        /* Bloque gris que usamos para tener una 
+        referencia de la distancia que hay entre 
+        el borde de una caja y su entorno */           
+        .bloque { 
+            background-color: lightgray;
+            width: auto;
+            height: 50px;
+            /*margin: 20px;*/
+        }
+
+        /* Creamos un estilo para separar una caja de otra */
+        #espaciador {
+            height: 100px;
+        }
+
+        /* definimos diferentes estilos de "margin" 
+           para los parrafos. */
+        .p1 {
+            border: 4px solid black;
+            padding: 10px; /*distancia entre el texto del párrafo y el bode del párrafo*/
+            margin: 20px; /* Un solo valor para los 4 lados */
+            /*margen: distancia entre el borde externo del párrafo y el siguiente elemento*/
+            background-color: orange;
+        }
+
+        /* Padding fijo en px, determinados 
+           con margin-top, margin-left, 
+           margin-right y margin-bottom. */
+        .p2 {
+            border: 4px solid black;
+            padding: 10px;
+            margin-top: 30px;
+            margin-right: 100px;
+            margin-left: 50px;
+            margin-bottom: 5px;
+            background-color: orange;
+        }
+
+        /* Padding y margen con tres valores 
+          (top, laterales, bottom) */
+        .p3 { 
+            border: 4px solid black;
+            padding: 10px;
+            margin: 30px 50px 10px; /*30px top 50px laterales y 10px bottom*/
+            background-color: orange;
+        }
+        
+        /*margen top/bottom auto y lateral fijo*/
+        .p4 { 
+            border: 4px solid black;
+            padding: 10px;
+            margin: auto 30px; /*auto para top y bottom, 30px para laterales*/
+            background-color: orange; 
+        }              
+
+    </style>
+</head>
+
+<body>
+    <h3>Margin (Margenes)</h3>
+    <p>En el modelo de cajas, los márgenes (margin) son los espacios exteriores de un elemento. El espacio que hay entre el
+        borde de un elemento y el borde de otros elementos adyacentes es lo que se considera margen.</p>
+
+    <h4>Mismo margin en top-right-bottom-left (fijo en px)</h3>
+    <div class="bloque"></div>
+    <p class="p1">Este es un párrafo que tiene márgenes.<br>
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit, ad!</p>
+    <div class="bloque"></div>
+ 
+
+    <div id="espaciador"></div>
+
+    <h4>Padding fijo en px, determinados con margin-top, margin-left, margin-right y margin-bottom.</h4>
+    <div class="bloque"></div>
+    <p class="p2">Este es un párrafo que tiene márgenes.<br>
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit, ad!</p>
+    <div class="bloque"></div>
+
+
+
+    <div id="espaciador"></div>
+
+    <h4>Padding con tres valores (top, laterales, bottom)</h4>
+    <div class="bloque"></div>
+    <p class="p3">Este es un párrafo que tiene márgenes.<br>
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit, ad!</p>
+    <div class="bloque"></div>
+
+
+
+    <div id="espaciador"></div>
+
+    <h4>Padding con dos valores (vertical, horizontal). Vertical en "auto"</h4>
+    <div class="bloque"></div>
+    <p class="p4">Este es un párrafo que tiene márgenes.<br>
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit, ad!</p>
+    <div class="bloque"></div>  
+
+</body>
+
+</html>

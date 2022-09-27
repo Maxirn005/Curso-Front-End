@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posicionamiento (Relative))</title>
+    <style>
+        #parent2 {
+            position: relative; /*está a 10 px del párrafo anterior*/
+            top: 10px;    /*relative sirve como anclaje al hijo que es absoluto*/
+            left: 50px;
+            border: 3px solid blue;
+            background-color: lightblue;
+            width: 300px;
+            height: 100px;
+        }
+
+        #child2 {
+            position: absolute; /*se sitúa respecto del padre con pos relativo*/
+            border: 3px solid red;
+            background-color: rgba(255, 200, 200, 0.5);
+            top: 65px;
+            left: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Propiedades del posicionamiento</h1>
+
+    <h2>position: relative;</h2>
+    <!--Es en relación a "algo"-->
+    <p> El elemento "Parent2" tiene una posición <b>relative</b>, y permanecerá en el flujo natural de la página.<br>
+        ¿Relativo a quién?. En este caso relativo a <b>este párrafo</b> que está justo antes del div padre. <br>
+        El div padre está a 10 px del párrafo y a 50px de distancia izquierda. <br>
+        También actuará como punto de anclaje para el elemento Child2 absolutamente posicionado.
+    </p>
+    <div id="parent2">
+        <b>Parent2:</b> position: relative. top: 10px; left: 50px; <br>
+        Contenedor <b>Padre2</b>
+        <div id="child2"><b>Child2:</b> position: absolute, left: 30px, top: 65px<br>
+            Dentro del contenedor <b>Padre2</b> tiene una posición absoluta respecto del Padre2, en este caso a 65 px
+            desde <b>el</b> borde superior (top) del padre y a 30 px desde <b>el</b> borde izquierdo (left) del padre.
+            <br> El hijo siempre está a la misma distancia del padre.
+            Si el padre tiene posición estática, el hijo se pega al borde del documento, como en el ejemplo 1.
+        </div>
+    </div>
+    <br><br><br><br><br><br>
+
+
+
+    <br><br><br><br><br><br>
+</body>
+
+</html>

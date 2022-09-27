@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posicionamiento (ej clase)</title>
+    <style>
+        #parent3 {
+            position: absolute;
+            border: 2px solid blue;
+            background-color: lightblue;
+            width: 300px;
+            height: 100px;
+            top: 350px;
+            right: 30px;
+        }
+
+        #child3 {
+            position: absolute;
+            border: 2px solid red;
+            background-color: rgba(255, 200, 200, 0.5);
+            top: 60px;
+            right: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Propiedades del posicionamiento</h1>
+
+    <h2>position: absolute;</h2>
+    <p>El elemento "Parent3" tiene una posición <b>absoluta</b> y NO permanecerá en el flujo natural de la página.<br>
+        Se posicionará de acuerdo con el antepasado posicionado más cercano. <br>
+        También actuará como punto de anclaje para el elemento Child3 absolutamente posicionado.
+    </p>
+
+    <div id="parent3">
+        <b>Parent3:</b> position: absolute, top: 350px, right: 30px.<br>
+        Contenedor <b>Padre3</b>
+        <div id="child3"><b>Child3:</b> position: absolute, right: 15px, top: 60px<br>
+            Dentro del contenedor <b>Padre3</b> tiene una posición absoluta respecto del Padre3, en este caso a 60 px
+            desde <b>su</b> borde superior (top) y a 15 px desde <b>su</b> derecha (right)
+        </div>
+    </div>
+
+
+</body>
+
+</html>

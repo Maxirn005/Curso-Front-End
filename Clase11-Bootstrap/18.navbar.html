@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Navbar</title>
+    <link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" rel="stylesheet" />
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+        <!-- color de texto: navbar-light  y color de fondo: bg-light-->
+        <!-- sticky-top  si quiero que sea sticky -->
+        <!-- navbar-expand-md  que no aparezca como hamburguesa si hay lugar-->
+        <!-- info en: https://getbootstrap.com/docs/5.0/components/navbar/ -->
+        <a class="navbar-brand" href="#"> <!--navbar-brand marca, logo-->
+            Menu
+        </a>
+        <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+            class="navbar-toggler" data-target="#navbarSupportedContent" data-toggle="collapse" type="button">
+            <span class="navbar-toggler-icon"> <!--para el menú hamburguesa-->
+            </span>
+        </button> 
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active"> <!--activo, la página sobre la que estoy-->
+                    <a class="nav-link" href="#">Inicio<span class="sr-only">(current)</span></a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Clientes</a>
+                </li>
+                
+                <li class="nav-item dropdown">
+                    <a aria-expanded="false" aria-haspopup="true" class="nav-link dropdown-toggle"
+                        data-toggle="dropdown" href="#" id="navbarDropdown" role="button">
+                        Dropdown
+                    </a>
+                    <div aria-labelledby="navbarDropdown" class="dropdown-menu">
+                        <a class="dropdown-item" href="#">
+                            Action
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            Another action
+                        </a>
+                        <div class="dropdown-divider"> <!--linea horizontal-->
+                        </div>
+                        <a class="dropdown-item" href="#">
+                            Something else here
+                        </a>
+                    </div>
+                </li>
+
+                <li class="nav-item">
+                    <a aria-disabled="true" class="nav-link disabled" href="#" tabindex="-1">
+                        Deshabilitado
+                    </a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input aria-label="Search" class="form-control mr-sm-2" placeholder="Escriba aquí" type="search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+                    Buscar
+                </button>
+                
+            </form>
+        </div>
+    </nav>
+
+    <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente quibusdam ab officia dignissimos reprehenderit, hic eaque aperiam quia reiciendis error mollitia esse labore consequatur illo nesciunt? Praesentium error numquam ut, porro saepe non, sint unde aspernatur mollitia similique dolore. Error enim debitis corporis, quo accusamus quis aspernatur nisi amet recusandae iste ex, dolores commodi at. Quibusdam, minima necessitatibus. Vero neque optio voluptatem provident maxime ab sint qui? Voluptatum fuga provident in saepe maxime voluptates sed unde quod? Sequi reiciendis molestias nihil placeat sed soluta dolorem quasi ab earum cum ipsum suscipit, alias sunt impedit itaque tempora esse repellat. Sequi, in dolor quaerat adipisci similique quibusdam veritatis corporis fuga eum nisi dolorem explicabo dignissimos ullam ipsum ratione praesentium alias rerum cupiditate at perspiciatis. Laudantium minima tenetur aperiam perferendis sapiente tempora veritatis quam voluptas ratione, modi a eos laborum labore sint? Deserunt, asperiores iusto ullam placeat dicta aspernatur, rem minima odit alias dolores consequuntur accusantium sapiente eaque quibusdam a magni animi magnam possimus aperiam? Reprehenderit tenetur minus quos enim ducimus praesentium quis consectetur quae molestias nisi optio dolores totam nulla odio minima suscipit, porro nihil ut? Architecto, illum nisi excepturi reprehenderit iusto nemo facilis libero cumque sint non. Officia delectus est, harum mollitia error sequi ipsa similique consectetur veniam ratione cumque, culpa distinctio ex quidem, quos incidunt in? Eum iusto excepturi eius adipisci sint aliquid odio libero nobis dicta, animi eos, impedit maiores illum perferendis aliquam quos eaque quisquam, voluptatum ratione quo voluptatibus necessitatibus esse. Unde, doloremque iusto iure officiis praesentium libero aperiam alias illum animi numquam totam quo sapiente a in ducimus molestiae error. Repellendus, doloribus! Reiciendis nesciunt voluptates modi architecto delectus maiores harum ratione labore, alias commodi repellat vitae. Aliquam et molestias obcaecati officia vero iste expedita reiciendis illum! Iusto sed quae alias mollitia quasi accusamus omnis, veniam laboriosam quia animi placeat asperiores vero. Pariatur illum quia repudiandae odio itaque at, molestiae corrupti quas magni nobis debitis minima eveniet incidunt, numquam, ullam tenetur! Laborum odit, quo commodi et dolores voluptates saepe, beatae aliquid optio id ratione sit nulla harum quod. Veritatis ducimus aliquid repudiandae libero hic architecto distinctio ea quo animi blanditiis deserunt nesciunt, quia in a magnam? Nostrum possimus temporibus consectetur eius omnis voluptas sed numquam debitis ex iste. Sint, totam velit error, ipsum enim consequatur perferendis nemo voluptates architecto laboriosam dignissimos hic unde doloremque fugit. Soluta omnis, nostrum laborum vitae quam deserunt ex? Molestias optio eos minima exercitationem excepturi porro accusamus, recusandae eaque cum maiores id praesentium autem est possimus dolorum explicabo, ab consequatur. Vero consequuntur, doloribus architecto minus atque fuga nihil quae exercitationem. Quas totam eos in quibusdam rerum harum unde, architecto possimus aliquid! Laudantium libero quaerat facere accusamus quia cum quam quo ipsa, exercitationem minus reprehenderit animi quasi velit asperiores ad autem labore consequuntur in perspiciatis placeat officiis. Hic quaerat magni totam fugit aut sed corporis quae recusandae aspernatur. Consequatur vero minus nesciunt ducimus harum eligendi quibusdam maiores amet rem odit architecto a saepe voluptatem obcaecati quidem aliquam mollitia, labore tempora incidunt. Nisi ea facilis officiis nihil voluptatum sint, nulla perferendis sunt numquam reiciendis. Eveniet suscipit molestias culpa magni delectus eligendi consectetur impedit consequuntur aspernatur ipsam architecto unde nostrum minus, quis atque esse voluptatibus labore dolorem totam quod reprehenderit ab reiciendis cum at? Veniam in facilis tenetur quasi vitae, fugit, dolor necessitatibus accusantium perferendis, quo inventore quam. Quo ea tempora odio nisi nemo vel! Doloremque reiciendis optio nobis quisquam molestias dolor tempora, reprehenderit tenetur atque quia doloribus quibusdam inventore velit impedit consequuntur necessitatibus. Eligendi quos, molestiae asperiores soluta velit perspiciatis veniam est recusandae culpa! Dolorem aliquid reiciendis magnam necessitatibus totam veritatis earum, maiores adipisci architecto ex! Quos, tempore neque! Aliquam nemo quis sapiente, aliquid porro veniam architecto rerum inventore eum maxime soluta nesciunt quasi nulla, dolore reiciendis! Ipsa laudantium blanditiis, sapiente perferendis magnam recusandae eligendi debitis hic eum quidem consectetur harum. Placeat totam eligendi saepe assumenda. Non atque, ducimus dolores debitis dignissimos veniam minima sed quae magni incidunt, molestiae qui dolor doloremque animi alias assumenda suscipit reprehenderit vero. Minima dolorem atque voluptate sed suscipit hic cupiditate cumque, necessitatibus voluptatibus molestias ratione. Ut quaerat qui, distinctio, explicabo reprehenderit tempora sunt veniam porro ab debitis odio, exercitationem tenetur! Sunt ipsum quaerat quod magnam aliquam vitae obcaecati eum odio? Nihil autem fugiat, quam, sint harum dolorem similique iure impedit modi ducimus eaque quasi deleniti animi architecto molestiae voluptate rem eius commodi dolores laborum. Eveniet inventore nobis culpa ducimus ratione voluptatem accusamus perferendis ullam sit ipsum quae aperiam corporis, dolore eum perspiciatis maxime hic exercitationem qui atque recusandae aliquam minus fugit ab deserunt? Illum maxime fuga, tempore odio iure asperiores, obcaecati dicta quas itaque tenetur molestias commodi doloremque minima. Earum non quia illum quibusdam eius eos mollitia, explicabo doloremque labore magni! Ad eum fugiat error nostrum illo facere mollitia voluptates recusandae tenetur hic fuga ducimus explicabo rem tempore magnam delectus labore enim neque in libero, iste atque at? Corrupti nobis cumque possimus, quaerat pariatur a delectus ad commodi reiciendis quod ex corporis at veritatis illo qui quasi? Numquam, et totam beatae ad tempora corrupti eveniet, accusantium similique nesciunt dolor ipsum veritatis exercitationem suscipit adipisci voluptatem excepturi doloremque consectetur amet. Sed repellat, facilis totam aspernatur laboriosam voluptates perferendis voluptatem minus optio porro architecto doloribus rem quas quis. Commodi incidunt ipsa tempora ab pariatur. Voluptates, magni maxime eos mollitia dolorem dicta, vitae iste ut sequi nobis atque sint error ratione! Iste blanditiis voluptatum amet, accusamus ab consequuntur eveniet corrupti enim vel. Perferendis sit iusto aperiam sed quos, animi ipsa error. Voluptate nemo atque rerum eos beatae, facilis sit a eligendi nihil ab, laborum quaerat autem odio unde. Magni, tempore velit! Dolor, a quisquam reprehenderit placeat magni, unde possimus eum saepe officiis architecto quia itaque reiciendis? Repudiandae fuga suscipit doloremque corporis quo nam libero. Cum, exercitationem magni aliquam praesentium sit hic earum totam! Quae placeat, veniam inventore porro labore qui ipsum sunt, fugit voluptatem nobis sint recusandae! Iure, sunt, ducimus, neque iste iusto amet nostrum at in voluptates magnam rem! Dignissimos, inventore alias veritatis itaque exercitationem totam praesentium, libero quam, aliquid voluptate mollitia?</p>
+
+    <script crossorigin="anonymous" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        src="https://code.jquery.com/jquery-3.4.1.slim.min.js">
+        </script>
+    <script crossorigin="anonymous" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js">
+        </script>
+    <script crossorigin="anonymous" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js">
+        </script>
+    <script src="script.js"></script>
+</body>
+
+</html>

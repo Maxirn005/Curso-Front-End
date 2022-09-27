@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fuentes en % y em</title>
+    <style>
+        body {
+          font-size: 100%; /*defino que el body tiene tamaño del 100%*/ 
+        }
+        h1 { /* em es el ancho de la m, viene de la época del molde */
+          font-size: 2.5em; /*2,5 veces el tamaño que la fuente del body*/
+        }
+        /*The em and ex units depend on the font and may be different for each element in the document. The em is simply the font size. In an element with a 2in font, 1em thus means 2in. Expressing sizes, such as margins and paddings, in em means they are related to the font size, and if the user has a big font (e.g., on a big screen) or a small font (e.g., on a handheld device), the sizes will be in proportion. Declarations such as text-indent: 1.5em and margin: 1em are extremely common in CSS. Fuente: W3 School*/
+        
+        h2 {
+          font-size: 1.875em;
+        }
+        p {
+          font-size: 0.875em;
+        }
+
+        span{
+          font-size: 1em;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Título con H1 de 2,5 em</h1>
+    <h2>Título con H2 de 1.875em</h2>
+    <p>Párrafo de 0.875</p>
+    <p>Especificar el tamaño de fuente en porcentaje y em muestra el mismo tamaño en todos los navegadores principales y permite que todos los navegadores cambien el tamaño del texto.</p>
+    <span>Texto span de 1 em. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente doloribus corporis iste molestias veritatis tenetur voluptatum unde iure eaque quaerat?</span>
+  </body>
+
+</html>

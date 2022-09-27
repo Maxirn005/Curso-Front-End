@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Incluimos la referencia al archivo CSS-->
+    <link rel="stylesheet" href="css_05.css">
+
+    <title>CSS5</title>
+</head>
+<body>
+
+    <span style="color:yellowgreen;"> 
+        <b> negrita</b>
+        <i>italica</i>
+    </span>
+
+    <div style="color:orangered">
+        <p> Párrafo 1</p>
+        <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla, doloremque.</p>
+    </div>
+    
+    <span class="negro-gris">Un texto en span de la clase negro-gris</span>
+    <span class="blanco-negro">Otro texto en span de la clase blanco-negro</span>
+    <div class="negro-gris">Un texto con div de la clase negro-gris</div>
+    <div class="blanco-negro">Otro texto con div de la clase blanco-negro</div>
+
+    <br>
+
+    <!-- Todo lo que queda dentro del div va a tener los atributos de class-->
+    <div class="negro-gris">
+        <p>Párrafo 1 dentro del div de la clase negro-gris</p>
+        <p>Párrafo 2 dentro del div de la clase negro-gris</p>
+    </div>
+
+    <!-- Pero puedo hacer excepciones....-->
+    <div class="negro-gris">
+        <p>Párrafo 1 dentro del div de la clase negro-gris</p>
+        <p>Párrafo 2 dentro del div de la clase negro-gris</p>
+        <p class="blanco-negro">Párrafo 3 dentro del div con clase blanco-negro sobre p</p>
+        <p style="font-size: 24px; background-color: yellow;">Párrafo 4 dentro del div con estilo en línea</p>
+        <p style="background-color: orange;">Párrafo 5 dentro del div con estilo en línea</p>
+        <p>Párrafo 6 dentro del div sin declararle estilo propio, le aplica el de la clase negro-gris del div</p>                
+    </div>
+    
+
+</body>
+</html>

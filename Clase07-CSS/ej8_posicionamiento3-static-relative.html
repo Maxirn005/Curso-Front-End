@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posicionamiento (static + absolute)</title>
+    <style>
+        p {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        div {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1 {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h2 {
+            font-family: Arial, Helvetica, sans-serif;
+            color: blue;
+        }
+
+        #parent1 {
+            position: static; /*si lo quitamos, no cambia su comportamiento*/
+            /*por defecto, si no aclaro la position, es estática, el elemento se muestra a continuación del otro*/
+            border: 4px solid blue;
+            background-color: lightblue;
+            width: 300px;
+            height: 100px;
+        }
+
+        #child1 {
+            position: relative;            
+            border: 4px solid red;
+            background-color: rgba(255, 200, 200, 0.5);
+            top: 5px;
+            left: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Propiedades del posicionamiento</h1>
+    <!--Viene por defecto cuando trabajamos con HTML-->
+    <h2>position: static;</h2>
+    <p>El elemento "Parent1" tiene una posición <b> static</b>, y permanecerá en el flujo natural de la página.<br>
+        El elemento <b>Child1</b> que está relativamente posicionado respecto de su padre.
+    </p>
+    <div id="parent1">
+        <b>Parent1:</b> position: static.<br>
+        Contenedor <b>Padre1</b>
+        <!--Contenido por el div padre-->
+        <div id="child1"> <b>Child1:</b> position: relative, left: 15px, top: 50px <br><br>
+            Dentro del contenedor <b>Padre1</b> tiene una <br> posición relativa respecto del <i>padre</i>, en este caso
+            <br> a 50 px desde el borde superior (top) a partir de donde termina el texto del padre <br> y a 15 px desde la izquierda (left).
+        </div>
+    </div>
+
+
+    <br><br><br><br><br><br>
+</body>
+
+</html>

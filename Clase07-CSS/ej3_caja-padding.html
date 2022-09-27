@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de caja</title>
+    <style>
+        body {
+            font-family: Arial;
+            font-size: 20px;
+            margin: 25px;
+        }
+
+        #contenedor {
+            background-color: lightgray;
+            padding: 10px
+            /*margin: 20px;*/
+        }
+
+        /* Creamos un estilo para separar una caja de otra */
+        #espaciador {
+            height: 100px;
+        }
+
+        /* definimos diferentes estilos de "padding" 
+           para los parrafos. */
+        .p1 {
+            border: 4px solid black;
+            padding: 30px; /* Un solo valor para los 4 lados */
+            margin: 20px;
+            background-color: lightsalmon;
+        }
+
+        .p2 {
+            border: 4px solid black;
+            padding: 30px 10vw; /*vertical en px (arriba/abajo), horizontal (izq/der) en vw*/
+            margin: 20px;
+            background-color: lightsalmon;
+        }
+
+        .p3 { 
+            border: 4px solid black;
+            padding: 30px 80px 10px; /* top, laterales, bottom */
+            margin: 20px;
+            background-color: lightsalmon;
+        }
+        
+        .p4 { /*tamaño de la caja*/
+            border: 4px solid black;
+            padding: 30px 5px 10px 80px; /* top, right, bottom, left (sentido horario)*/
+            margin: 20px;
+            background-color: lightsalmon;        
+        }              
+
+        .p5 {
+            border: 4px solid black;
+            padding: 30px 40% 5vw 2em;
+            margin: 20px;
+            background-color: lightsalmon;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h3>Padding</h3>
+    <p>Se utiliza para generar espacio alrededor del contenido de un elemento dentro de los
+        bordes definidos.</p>
+
+    <h4>Mismo padding en top-right-bottom-left (fijo en px)</h3>
+    <div id="contenedor">
+        <b>Contenedor principal</b>
+        <p class="p1">Este es un párrafo que está dentro del DIV</p>
+    </div>
+ 
+
+    <div id="espaciador"></div>
+
+    <h4>Padding vertical fijo en px, horizontal flexible en vw</h4>
+    <div id="contenedor">
+        <b>Contenedor</b>
+        <p class="p2">Este es un párrafo que está dentro del DIV</p>
+    </div>
+
+
+
+    <div id="espaciador"></div>
+
+    <h4>Padding con tres valores (top, laterales, bottom)</h4>
+    <div id="contenedor">
+        <b>Contenedor</b>
+        <p class="p3">Este es un párrafo que está dentro del DIV</p>
+
+        <div>
+            Este texto está dentro de un DIV dentro del DIV anterior
+        </div>
+    </div>    
+
+
+
+    <div id="espaciador"></div>
+
+    <h4>Padding con cuatro valores (top, right, bottom, left)</h4>
+    <div id="contenedor" >
+        <b>Contenedor</b>
+        <p class="p4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti aspernatur officia maxime velit sed eius, placeat praesentium quasi beatae molestias tenetur tempore ex quia quam, ipsum harum ducimus iusto dolorem?</p>
+
+        <div>
+            Este texto está dentro de un DIV dentro del DIV anterior
+        </div>
+    </div>       
+
+    <div id="espaciador"></div>
+
+    <h4>Segundo ejemplo de Padding con cuatro valores (top, right, bottom, left)</h4>
+    <div id="contenedor" >
+        <b>Contenedor</b>
+        <p class="p5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti aspernatur officia maxime velit sed eius, placeat praesentium quasi beatae molestias tenetur tempore ex quia quam, ipsum harum ducimus iusto dolorem?</p>
+
+        <div>
+            Este texto está dentro de un DIV dentro del DIV anterior
+        </div>
+    </div>   
+
+    
+</body>
+
+</html>

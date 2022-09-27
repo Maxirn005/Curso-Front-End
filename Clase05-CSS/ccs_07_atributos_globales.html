@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Incluimos la referencia al archivo CSS-->
+    <link rel="stylesheet" href="css_04.css">
+
+    <title>CSS4</title>
+</head>
+<body>
+    
+    <form action="">
+        <!-- atributos globales-->
+        <!-- tabindex altera el orden en el que el tab va a un campo-->
+        <!-- title es el tooltip-->
+        <!-- spellcheck valida ortografía-->
+        <label for="apellido">Apellido:</label>
+        <input type="text" name="ape_cliente" id="apellido" title="Ingrese apellido" tabindex="1" spellcheck="true"><br><br>
+
+        <label for="nombre">Nombre:</label>
+        <input type="text" name="nom" id="nombre" class="form_input" tabindex="3"><br><br>
+
+        <label for="correo">Correo:</label>
+        <input type="text" name="email_cliente" class="form_input" id="correo" tabindex="2">  <br><br>
+
+        <label for="direccion">Dirección:</label> 
+        <input type="text" name="dir_cliente" class="form_input" id="direccion" tabindex="4">  <br><br>
+
+        <input type="reset" value="Borrar">                      
+    </form>
+
+    <!--atributos globales translate: si permito que se autotraduzca o no-->
+    <p translate="yes"> this is a paragraph.</p>
+    <p translate="no"> this is a paragraph.</p>
+    <p> this is a paragraph.</p>
+
+</body>
+</html>

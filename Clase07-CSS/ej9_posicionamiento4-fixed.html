@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posicionamiento (Fixed)</title>
+    <style>
+        #parent4 {
+            position: fixed; /*fijo respecto de los bordes de la ventana del navegador*/ /*fixed sirve como anclaje al hijo que es absoluto*/
+            border: 1px solid blue;
+            background-color: lightblue;
+            width: 300px;
+            height: 100px;
+            bottom: 20px;
+            left: 30px;
+            right: 0;
+        }
+
+        #child4 {
+            position: absolute;
+            border: 1px solid red;
+            background-color: rgba(255, 200, 200, 0.5);
+            top: 55px; /*probar top: -55px; */
+            right: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Propiedades del posicionamiento</h1>
+
+    <h2>position: fixed;</h2>
+    <p>El elemento "Parent4" tiene una posición <b>fixed</b> y NO permanecerá en el flujo natural de la página.<br>
+        Se posicionará de acuerdo con la ventana gráfica (viewport).<br>
+        También actuará como punto de anclaje para el elemento Child4 absolutamente posicionado.<br>
+        La referencia es la parte visual del navegador.<br><br><br>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Error nesciunt nam quasi officia ea, accusantium cupiditate perspiciatis cum libero commodi incidunt vero tempore, a alias quo quos architecto porro voluptates? Ut ipsum sit, nisi perferendis vitae quasi saepe magni quae? Architecto eveniet quam culpa temporibus quo voluptates vero aperiam tempore officiis veritatis reiciendis odit non, ipsa blanditiis recusandae expedita accusantium maxime explicabo alias vitae facilis est qui vel laudantium. Adipisci animi nam ducimus illum quidem provident quae itaque, nulla nihil numquam vero consequuntur, laudantium accusantium voluptas similique, dolor sit? Accusamus quas id praesentium temporibus dicta ullam asperiores tempora voluptate! Aut asperiores, iusto placeat aspernatur quidem consequatur eligendi quod saepe reiciendis minus animi eveniet non est necessitatibus illo rem sint architecto impedit porro. Expedita optio ratione iusto, recusandae numquam et reiciendis neque repellendus dignissimos, odio voluptatem cumque, nihil aut alias similique. Saepe dolore aperiam fugit doloribus debitis facere reprehenderit alias dignissimos dolores. Consequatur aspernatur accusamus, cum quaerat blanditiis rem, repellat eveniet perferendis delectus facere suscipit hic minus obcaecati deleniti ab porro voluptatum amet explicabo beatae aperiam! Veritatis, dignissimos. Voluptas magnam quis enim minima, impedit saepe facere doloremque reiciendis aspernatur, ad cum consequuntur quos molestiae amet minus animi illo dignissimos laboriosam non. Repellendus voluptatem dolorum accusamus hic similique. Tempore, ut voluptas veritatis fugiat excepturi blanditiis itaque impedit ab natus ullam nihil autem rem velit deserunt! Maiores repellat ducimus dolor ratione natus similique voluptatum, vel assumenda odit aliquid, voluptate et magni porro accusamus quibusdam itaque! Accusantium aspernatur laborum ab repudiandae. Quidem illum dolores animi velit consequuntur, quibusdam molestiae quisquam possimus quia, rem odio doloremque quo accusamus et. Quo vero, vel eligendi porro nisi, aut voluptatibus possimus numquam consequatur blanditiis sapiente ipsa dicta esse. Nobis rerum nostrum dolor possimus ab, recusandae atque vitae, repellat ea amet fugiat incidunt ratione aliquid cumque exercitationem quasi qui.
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia molestiae velit culpa nihil aperiam vero et ab facere tempore, voluptatum, voluptates sit itaque doloremque labore earum quos quas suscipit, obcaecati recusandae. Quo officia doloremque assumenda, dicta doloribus enim voluptatibus dignissimos aperiam cum quidem quia adipisci rem itaque omnis voluptatum quibusdam nam! Vero aut earum distinctio tenetur consequuntur ex quidem, molestiae laboriosam iure minima. Laborum tempora fugit suscipit maxime asperiores enim.
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo odio illo porro laboriosam necessitatibus nisi, ab totam ullam rerum quia, eveniet voluptates, consectetur odit commodi unde. Vero necessitatibus ex hic expedita quibusdam eum accusantium, unde quis libero aspernatur repudiandae? Facere, natus fugit. Aut nihil modi nemo nisi. Mollitia, itaque quo?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla eum dolorum consectetur at odio eveniet nam explicabo laboriosam dolorem veritatis eius autem modi, harum ea error laborum itaque culpa excepturi tenetur! Quaerat atque maiores delectus alias provident nesciunt numquam reprehenderit porro repudiandae autem eaque labore placeat ipsam sint, tempora recusandae tempore omnis nulla ipsa fuga at quas deserunt. Voluptas, qui quae! Nisi rem assumenda sequi temporibus aspernatur laboriosam odit voluptas ratione nam, delectus inventore. Enim officia debitis laudantium quam nulla doloribus, distinctio earum expedita omnis, a sit, magni adipisci possimus! Sit praesentium numquam ex adipisci debitis porro quaerat commodi ullam!
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis repellendus vero sit, quae voluptas rem, velit facilis, totam commodi sequi soluta at aliquam! Saepe at veniam fugiat dolores. Est eveniet ad molestiae. Adipisci dolor exercitationem repudiandae eveniet beatae. Temporibus doloribus quo accusamus et est corrupti blanditiis, sunt in alias distinctio.
+    </p>
+
+
+    <div id="parent4">
+        <b>Parent4:</b> position: fixed, bottom: 20, left: 30, right: 0. <br>
+        Contenedor <b>Padre4</b>
+        <div id="child4"><b>Child4:</b> position: absolute, right: 15px, top: 55px.
+            Posición absoluta respecto del Padre4.
+        </div>
+    </div>
+    <br><br><br><br><br><br>
+</body>
+
+</html>

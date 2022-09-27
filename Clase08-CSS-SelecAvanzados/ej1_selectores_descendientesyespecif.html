@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector descendiente</title>
+    <link rel="stylesheet" href="selector-descendiente.css">
+
+    <style>
+        div > i {
+            color: blue; /* tarea probar color: blue !important;*/
+            font-weight: bold;
+        }
+
+        span i {
+            color: rgb(229, 8, 137);
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+<body>
+    <h1> Selectores descendientes</h1>
+      
+     <span>
+        <p><i> Estoy dentro del span i, dentro de un párrafo y esto está en cursiva</i></p>
+        <i>Esto está en cursiva, pero no en un párrafo.</i>
+        <p>Esto está en un párrafo dentro del span con <b>boldface <i>y cursiva</i></b></p>
+    </span>
+
+    <i> Esto está en cursiva, fuera del div y fuera del span.</i>
+
+    <br><br><br><br>
+    <div>
+        <p><i>Esto está en cursiva, dentro del div y de un párrafo.</i></p>
+        <i style="color:red;">Esto está en cursiva, pero no en un párrafo. El estilo en línea le sobreescribe el color.</i>
+        <p>Esto está dentro del div y de un párrafo en <b>boldface <i>y cursiva</i></b></p>
+     </div>
+
+     <br><br><br>
+    <div>
+        <p><i>Esto está en cursiva, dentro del div y de un párrafo.</i></p>
+        <i>Esto está en cursiva, adentro del div, pero no en un párrafo. Es un hijo directo.</i>
+        <p>Esto está dentro del div y de un párrafo en <b>boldface <i>y cursiva</i></b></p>
+     </div>
+</body>
+</html>

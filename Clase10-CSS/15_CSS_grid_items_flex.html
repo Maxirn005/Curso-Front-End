@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS GRID Items</title>
+
+    <style>
+        p {font-size: 22px;  }
+        .grid-container {
+            display: grid;                           /*Convierte el contenedor en una grilla */
+         /* display: inline-grid; */        
+            grid-template-columns: auto auto auto;   /*Forma en que se distribuyen los elementos*/
+           /*cantidad de columnas o con repeat(3, 1fr) que lo veremos en ejemplo "grid-responsive.html" */ 
+
+            gap: 10px;                               /*Espacios entre los hijos*/
+            background-color: limegreen;           /*Color de fondo del contenedor */
+            padding: 10px;                           /*Coloco un espacio alrededor del conjunto de hijos*/
+            border: 2px solid limegreen;           /*El borde no se ve */
+            border-radius: 15px;
+        }
+
+        .grid-item {
+            background-color: yellow;  /* Color de fondo de los hijos */
+            color:black;               /* Color del texto de los hijos */
+            padding:10px;
+            border: 2px solid black;   /* Borde de los elementos hijos */
+            border-radius: 15px;
+            text-align: center;          /* Contenido de los hijos centrado en x */
+        }
+
+        .item1 {
+            background-color: white;   /* Color de fondo del hijo */
+            grid-column-start: 1;        /* Comienza en la linea 1 | | | |  */  
+            grid-column-end: 4;          /* Finaliza en la linea 4 ,no contar columns sino lineas/gaps */
+        }
+
+        .item5 {
+            background-color: white;   /* Color de fondo del hijo */
+            grid-row-start: 3;           /* Comienza en la linea de separación 3 */
+            grid-row-end: 5;             /* Finaliza en la línea de separación 5 */
+        }    
+
+        .itemarea {
+            background-color: white;   /* Color de fondo del hijo  */
+            grid-row-start: 3;           /* Comienza en la linea horizontal de separación 3 */
+            grid-column-start: 3;        /* Comienza en la linea 3   */            
+            grid-row-end: 7;             /* Finaliza en la linea horizontal de separación 7 */
+            grid-column-end: 4;          /* Finaliza en la linea 4   */
+            /* grid-area: 3 / 3 / 7 / 4 ;   /* Atajo para definir los 4 valores en 1 linea*/
+           
+        }
+
+        .contenedor_flex{
+            display:flex;
+            flex-direction: row; /*Eje ppal x*/
+            align-items: center; /*Centrado en y*/
+            justify-content: center; /*Centrado en x*/
+            background-color: bisque;
+        }
+
+        .contenedor_flex > div{
+            background-color: chocolate;
+            padding: 10px;
+            border-radius: 4px;
+            border: 1px solid black;
+            margin:5px;
+            flex-grow: 1; /*Crece hasta ocupar el contenedor*/
+        }
+          
+    </style>
+</head>
+<body>
+    <h2>CSS GRID items</h2>
+
+    <p>Los elementos dentro del contenedor pueden ocupar mas de una fila / columna.</p>
+    <p>Para ello se utilizan las propiedades <mark><code>grid-row-start</code></mark>,  <mark><code>grid-column-start</code></mark>,  <mark><code>grid-row-end</code></mark>, <mark><code>grid-column-end</code></mark> y <mark><code>grid-area</code></mark>.</p>
+
+    <div class="grid-container">
+        <div class="grid-item item1">1</div> <!-- le aplico clases grid-item y item1-->
+        <div class="grid-item item5">5</div>
+        <div class="grid-item">2</div>
+        <div class="grid-item">3</div>
+        <div class="grid-item">4</div>
+        <div class="grid-item">6</div>
+        <div class="grid-item itemarea contenedor_flex">
+            <div>Elemento flex 1. <br>Lorem ipsum dolor sit amet.<br>Lorem ipsum dolor sit amet.</div>
+            <div>Elemento flex 2. <br>Lorem ipsum dolor sit amet.<br>Lorem ipsum dolor sit amet.</div>
+            <div>Elemento flex 3. <br>Lorem ipsum dolor sit amet.<br>Lorem ipsum dolor sit amet.</div>
+        </div>
+        <div class="grid-item">8</div>
+        <div class="grid-item">9</div>
+        <div class="grid-item">10</div>
+        <div class="grid-item">11</div>
+        <div class="grid-item">12</div>  
+          
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector descendiente</title>
+    <link rel="stylesheet" href="selector-descendiente.css">
+
+    <style>
+        div > i {
+            color: red;
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+<body>
+    <h1> Selectores descendientes</h1>
+    <div>
+        <p><i>Esto está en cursiva, dentro del div y de un párrafo.</i></p>
+        <i>Esto está en cursiva, pero no en un párrafo.</i>
+        <p>Esto está dentro del div y de un párrafo en <b>boldface <i>y cursiva</i></b></p>
+     </div>
+     <br><br>
+     
+    <i> Esto está en cursiva, fuera del div y fuera del span.</i>
+</body>
+</html>

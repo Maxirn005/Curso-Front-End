@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+html {
+  font-size:16px;
+}
+/*rem relativo a la raiz declarada*/
+div {
+  font-size: 3rem;
+  border: 1px solid black;
+}
+
+#top-div {
+  font-size: 2rem;
+  border: 1px solid red;
+}
+</style>
+</head>
+<body>
+
+<p>The font-size of this document is 16px.</p>
+
+<div id="top-div">
+Top-div: 2rem -> The font-size of this div element is 2rem, which translates to 2 x the browser's font size.
+<div> Div: 3 rem -> The font-size of this div element is 3rem. It also shows that it does not inherit from its parent element font size.</div>
+</div>
+
+<div style="font-size:48px ;"> Este div tiene 48 px, equivale a 3 rem (3 * 16px que es la raíz)</div>
+
+<p>Párrafo: 16 px The rem unit sets the font-size relative to the browsers base font-size, and will not inherit from its parents.</p>
+
+</body>
+</html>

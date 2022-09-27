@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de caja</title>
+    <style>
+        body {
+            font-family: Arial;
+            font-size: 20px;
+            margin: 25px;
+        }
+
+        #contenedor {
+            /* Contenedor para los parrafos de ejemplo */
+            background-color: lightcoral;
+            /*margin: 20px;*/ /*distancia del div al borde del body*/
+        }
+
+        /* Creamos un estilo para separar una caja de otra */
+        #espaciador {
+            height: 100px;
+        }
+
+        /* definimos diferentes cajas para los parrafos. */
+        .p1 {
+            border: 4px solid black;
+            padding: 30px; /*distancia del texto del párrafo al borde del párrafo */
+            margin: 20px; /*distancia desde el fin del párrafo al siguiente elemento */
+            background-color: lightblue;
+            
+        }
+
+        .p2 { /*tamaño de la caja*/
+            border: 4px solid black;
+            background-color: lightgreen;
+            /*no usamos padding, entonces no hay distancia entre el texto y el borde negro*/
+            /* Dimensiones fijas, en pixeles */ 
+            /*si el texto es muy largo queda afuera de la caja*/
+            width: 400px;  /*defino tamaño fijo para la caja*/
+            height: 160px;            
+        }
+
+        .p3 { /*tamaño de la caja*/
+            border: 4px solid black;
+            background-color: lightgreen;
+            /* Ahora, nunca será mayor a 500px */
+            max-width: 500px;  
+            height: 160px;            
+        }  
+        
+        .p4 { /*tamaño de la caja*/
+            border: 4px solid black;
+            background-color: lightgreen;
+            /* Ahora, nunca será menor a 500px */
+            min-width: 500px; /*si la pantalla tiene ancho menor a 500 px, la caja se desborda, aparece un scroll horizontal*/
+            height: 160px;            
+        }   
+        
+        .p5 { /*tamaño de la caja*/
+            border: 4px solid black;
+            background-color: lightgreen;
+            /* Ahora, nel alto unca será menor a 220px */
+            min-height: 220px;       
+        }   
+
+    </style>
+</head>
+
+<body>
+
+    <h3>Tamaño de la caja</h3>
+    <p>Para dar tamaños específicos a los diferentes elementos de un documento HTML,
+        necesitaremos asignarles valores a las propiedades width (ancho) y height (alto).</p>
+   
+    <h3>Tamaño de la caja por defecto (o "auto")</h3>
+    <div id="contenedor">
+        <b>Contenedor principal</b>
+        <p class="p1">Este es un párrafo que está dentro del DIV</p>
+
+        <div>
+            Este texto está dentro de un DIV dentro del DIV anterior
+        </div>
+    </div>
+    <p>Este es un párrafo que está fuera del contenedor, directamente dentro del BODY</p>
+
+
+    <div id="espaciador"></div>
+
+    <h3>Tamaño de la caja (fijo en px)</h3>
+    <div id="contenedor">
+        <b>Contenedor</b>
+        <p class="p2">Este es un párrafo que está dentro del DIV.</p>
+        <!-- si el texto es muy largo da overlow y queda fuera de la caja sobreescribiendo otros elementos-->
+
+        <div>
+            Este texto está dentro de un DIV dentro del DIV anterior
+        </div>
+    </div>
+
+
+
+    <div id="espaciador"></div>
+
+    <h3>Tamaño de la caja (con max-width: 500px;)</h3>
+    <div id="contenedor">
+        <b>Contenedor</b>
+        <p class="p3">Este es un párrafo que está dentro del DIV</p>
+
+        <div>
+            Este texto está dentro de un DIV dentro del DIV anterior
+        </div>
+    </div>    
+
+
+
+    <div id="espaciador"></div>
+
+    <h3>Tamaño de la caja (con min-width: 500px;)</h3>
+    <div id="contenedor" >
+        <b>Contenedor</b>
+        <p class="p4">Este es un párrafo que está dentro del DIV</p>
+
+        <div>
+            Este texto está dentro de un DIV dentro del DIV anterior
+        </div>
+    </div>    
+    
+    <div id="espaciador"></div>
+
+    <h3>Tamaño de la caja (con min-height: 220px;)</h3>
+    <div id="contenedor" >
+        <b>Contenedor</b>
+        <p class="p5">Este es un párrafo que está dentro del DIV. <br> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum vero deleniti laborum perspiciatis, voluptates beatae ut, mollitia nobis officia quis saepe praesentium illo eaque reiciendis aspernatur magnam asperiores molestias. Neque rerum ullam exercitationem ad, sapiente officia fugit iure ipsam placeat consectetur animi quia quis cumque nihil cupiditate consequuntur est maxime?. 
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit obcaecati nostrum quibusdam laudantium quo sed. Vitae cum quo, qui impedit sint eligendi atque sequi error dolor repellat nisi ullam nostrum asperiores maxime neque, iusto culpa beatae quia corporis animi tenetur optio? Fuga aspernatur accusamus commodi quaerat voluptate nesciunt doloribus reiciendis?</p>
+
+        <div>
+            Este texto está dentro de un DIV dentro del DIV anterior
+        </div>
+    </div>  
+
+</body>
+
+</html>

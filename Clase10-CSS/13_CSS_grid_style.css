@@ -1,0 +1,44 @@
+/*----------------------------------------------------------------*/
+/* Hoja de estilos                                                */
+/*----------------------------------------------------------------*/
+/* Fuente para toda la página */
+* {font-family: 'Courier New', Courier, monospace;}
+p {font-size: 22px;  }
+/*----------------------------------------------------------------*/
+/* Definimos el contenedor grid mayor (el gris)                   */
+/*----------------------------------------------------------------*/
+.grid {
+    display: grid;
+    grid-template-columns: 33% 33% auto;
+    grid-template-rows: auto 300px;
+    column-gap: 0.5em;
+    row-gap: 0.5em;
+    
+}
+
+
+.grid div {
+    background:  grey;
+    padding: 3px;
+}
+
+/*----------------------------------------------------------------*/
+/* Definimos el contenedor grid menor (el amarillo)                   */
+/*----------------------------------------------------------------*/
+.grid1 {
+    display: grid;
+  
+    grid-template-columns: auto auto ;    
+    column-gap: 0.1em;
+    row-gap: 0.1em;
+}
+
+
+.grid1 div {
+    background:  yellow;
+    padding: 2px;
+    text-align: center;
+}
+
+
+
